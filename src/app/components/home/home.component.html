@@ -1,0 +1,42 @@
+
+  <mat-toolbar color="primary" >
+
+    <button mat-button color="accent">Home</button>
+    <button mat-button color="accent" routerLink="/About">About</button>
+
+    <div class="dropdown">
+      <button class="dropbtn" mat-button color="accent">Courses
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Java</a>
+        <a href="#">Python</a>
+        <a href="#">Android</a>
+        <a href="#">Data Strucutre</a>
+        <a href="#">DBMS</a>
+      </div>
+    </div>
+
+    <button mat-button color="accent">Trending</button>
+    <button mat-button color="accent" (click)="placement()">Placement</button>
+
+    <button mat-button color="accent" style="padding-left: 740px;" (click)="logout()">Logout</button>
+    <button mat-button color="accent" (click)="login()">Login</button>
+
+  </mat-toolbar>
+
+  <div class="container" role="main">
+
+  <img [src]="myimage" style="width: 121.5%;">
+   <button class="btn" (click)="signin()">Get Started</button>
+
+  <div class="centered">
+    <h1>Welcome</h1>
+    <h2>You are looking for online learning website.<br>
+      Here,you find the multiple courses in one website.
+      </h2>
+      <br>
+      <h1>ANYTHING YOU ARE LEARNING IS NOT GOING TO BE WASTE.</h1>
+    </div>
+  </div>
+

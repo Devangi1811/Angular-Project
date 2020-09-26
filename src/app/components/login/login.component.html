@@ -1,0 +1,25 @@
+
+<div class="bg-img">
+  <form action="/action_page.php" class="container" style="height: 570px;">
+    <h1>Login</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn" (click)="login()">Login</button>
+    <div class="col">
+      <a href="#" class="fb btn" (click)="facebook()">
+        <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+       </a>
+      <a href="#" class="twitter btn" (click)="twitter()">
+        <i class="fa fa-twitter fa-fw"></i> Login with Twitter
+      </a>
+      <a href="#" class="google btn" (click)="google()"><i class="fa fa-google fa-fw">
+        </i> Login with Google+
+      </a>
+    </div>
+  </form>
+</div>
